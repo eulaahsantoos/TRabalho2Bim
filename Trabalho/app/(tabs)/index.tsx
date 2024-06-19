@@ -1,9 +1,8 @@
-import { Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import React from 'react'
 
 
 import Home from '../../components/home'
-import { View } from 'react-native-reanimated/lib/typescript/Animated';
 
 export default function HomeScreen() {
   return (
