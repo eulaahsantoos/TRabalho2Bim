@@ -13,12 +13,13 @@ export default function App() {
             return (
                 <View style={styles.container}>
                     
-                    <Image source={Imagem2} style={styles.img}/>
+                    <Image source={Imagem2} />
                     <p></p>
-                    <Text style={styles.texto}>LocateMe é a sua solução definitiva para encontrar locais e direções com facilidade e precisão.
-                         Com uma interface intuitiva e recursos avançados de localização, LocateMe permite que você descubra pontos de interesse próximos,
-                          encontre rotas otimizadas para o seu destino e compartilhe sua localização em tempo real com amigos e familiares.
-                         Nunca se perca novamente com LocateMe - sua ferramenta confiável para navegação precisa e eficiente.</Text>
+                    <Text style={styles.texto}>LocateMe é a sua solução definitiva para encontrar locais e direções com facilidade
+                        e precisão. Com uma interface intuitiva e recursos avançados de localização, LocateMe permite que você
+                        descubra pontos de interesse próximos, encontre rotas otimizadas para o seu destino e compartilhe sua 
+                        localização em tempo real com amigos e familiares. Nunca se perca novamente com LocateMe - sua ferramenta
+                        confiável para navegação precisa e eficiente.</Text>
                     <Image source={Imagem} style={styles.img}/>
                     <TouchableOpacity style={styles.button} onPress={() => setPage('sobre')}>
                         <Text style={styles.buttonText}>Sua Localização</Text>
@@ -42,16 +43,17 @@ const styles = StyleSheet.create({
         backgroundColor:'#ffff',
     },
     title: {
-        fontSize:50,
+        fontSize:30,
         fontWeight: 'bold',
         color: '#1E063F',
         marginBottom:20,
     },
     texto: {
-        fontSize:12,
+        fontSize:18,
         fontWeight: 'bold',
         color: '#00000',
         marginBottom:20,
+        padding: 30,
     },
     button: {
         backgroundColor:'#fff',
@@ -61,10 +63,11 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         color:'#1E063F',
-        fontSize:16,
+        fontSize:25,
         fontWeight: 'bold',
     },
     img:{
-        
+        width:200,
+        height:200,
     },
 });
